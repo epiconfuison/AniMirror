@@ -1,7 +1,8 @@
 import { test, expect } from '@playwright/test';
 test.use({ permissions: ['camera'], launchOptions: {
   executablePath: process.env.EDGE_EXECUTABLE ?? (process.platform === 'win32' ? 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe' : undefined),
-  args: ['--enable-webgl', '--ignore-gpu-blocklist', '--use-fake-device-for-media-stream', '--use-fake-ui-for-media-stream'],
+  args: ['--enable-webgl', '--ignore-gpu-blocklist', '--use-fake-device-for-media-stream', '--use-fake-ui-for-media-stream',
+    ...(process.env.CI ? ['--use-gl=angle', '--use-angle=swiftshader'] : [])],
 } });
 test.describe('local camera and Worker', () => {
   test('initializes local WASM, pauses without closing camera, then stops all tracks', async ({ page }) => {
