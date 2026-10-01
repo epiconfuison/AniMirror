@@ -1,0 +1,4344 @@
+{
+  "schemaVersion": 1,
+  "durationMs": 8000,
+  "frames": [
+    {
+      "schemaVersion": 1,
+      "timestamp": 0,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.95,
+        "eyeBlinkRight": 0.95,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 33.333333333333336,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.007994075390807159,
+        "y": 0.009998148251026085,
+        "z": 0.0037319784191484533
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.95,
+        "eyeBlinkRight": 0.95,
+        "jawOpen": 0.07986673331746252,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 66.66666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.01595263471467769,
+        "y": 0.0199851884770179,
+        "z": 0.007455830893497633
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.95,
+        "eyeBlinkRight": 0.95,
+        "jawOpen": 0.158935464636049,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 100,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.023840319695407345,
+        "y": 0.029950024994048446,
+        "z": 0.011163449171538917
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.2364161653290717,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 133.33333333333334,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.03162208693722421,
+        "y": 0.03988158678669422,
+        "z": 0.01484676034981993
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.31153467384692046,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 166.66666666666666,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.03926336361553826,
+        "y": 0.049768839808024504,
+        "z": 0.018497744450743883
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.3835404308833624,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 200,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.04673020107703806,
+        "y": 0.05960079923851836,
+        "z": 0.022108451885129096
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.4517139787160284,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 233.33333333333334,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.05398942566671995,
+        "y": 0.06936654169028957,
+        "z": 0.025671020761505993
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.5153741497901528,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 266.6666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.061008786111756134,
+        "y": 0.07905521734306052,
+        "z": 0.02917769400446264
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.5738848727196183,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 300,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.06775709680740424,
+        "y": 0.08865606199840186,
+        "z": 0.03262083624476561
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.6266615277019867,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 333.3333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.07420437636836844,
+        "y": 0.09815840903884566,
+        "z": 0.03599295044447997
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.6731767878463173,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 366.6666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.08032198083005593,
+        "y": 0.10755170127858515,
+        "z": 0.03928669422088905
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7129658880491483,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 400,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.08608273090794273,
+        "y": 0.11682550269259515,
+        "z": 0.04249489583367067
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7456312687737812,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 433.3333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.09146103274966076,
+        "y": 0.12596951001114173,
+        "z": 0.04561056980051964
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7708465483337544,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 466.6666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.09643299164332934,
+        "y": 0.13497356416679987,
+        "z": 0.04862693210721516
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7883597839907681,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 500,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.10097651817694758,
+        "y": 0.1438276615812609,
+        "z": 0.05153741497901528
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7979959892832436,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 533.3333333333334,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.10507142637720306,
+        "y": 0.15252196527939035,
+        "z": 0.05433568118121518
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7996588824332042,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 566.6666666666666,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.10869952339168573,
+        "y": 0.1610468158181884,
+        "z": 0.05701563781773162
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7933318483619749,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 600,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11184469031606716,
+        "y": 0.1693927420185106,
+        "z": 0.059571449597668746
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7790781047025562,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 633.3333333333334,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11449295380714597,
+        "y": 0.17755047148762587,
+        "z": 0.06199755154097883
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7570400701499316,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 666.6666666666666,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11663254816359753,
+        "y": 0.1855109409209211,
+        "z": 0.06428866109555288
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7274379414605454,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 700,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11825396759861521,
+        "y": 0.1932653061713073,
+        "z": 0.06643978963935764
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.6905674933190992,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 733.3333333333334,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11935000847220677,
+        "y": 0.20080495207513982,
+        "z": 0.06844625334257416
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.6467971230556723,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 766.6666666666666,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.1199158012955159,
+        "y": 0.2081215020237361,
+        "z": 0.07030368336608742
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.596564169741376,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 800,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.1199488323649806,
+        "y": 0.21520682726985682,
+        "z": 0.0720080353741204
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.5403705444409205,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 833.3333333333334,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11944895493021179,
+        "y": 0.2220530559588111,
+        "z": 0.07355559834030041
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.47877771528316515,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 866.6666666666666,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11841838984597569,
+        "y": 0.22865258187415188,
+        "z": 0.07494300262798323
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.41240109745717135,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 900,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11686171570538341,
+        "y": 0.234998072888245,
+        "z": 0.07616722732724127
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.34190390418706385,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 933.3333333333334,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.114785848498124,
+        "y": 0.24108247910832334,
+        "z": 0.07722560683254018
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.2679905201247241,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 966.6666666666666,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11220001088411494,
+        "y": 0.24689904070897578,
+        "z": 0.07811583664678198
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.19139946337118596,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1000,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.1091156912190818,
+        "y": 0.25244129544236893,
+        "z": 0.07883597839907681
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.11289600644789377,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1033.3333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.1055465925141074,
+        "y": 0.2577030858178576,
+        "z": 0.07938446406531802
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.03326452994663204,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1066.6666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.1015085715559135,
+        "y": 0.26267856594300765,
+        "z": 0.07976009938237047
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1100,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.0970195684583508,
+        "y": 0.26736220801843064,
+        "z": 0.07996206644843833
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1133.3333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.09209952695808656,
+        "y": 0.27174880847921434,
+        "z": 0.07998992550395018
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1166.6666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.08677030580859894,
+        "y": 0.27583349377612654,
+        "z": 0.07984361588908385
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1200,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.08105558166613812,
+        "y": 0.27961172579016785,
+        "z": 0.07952345617584608
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1233.3333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.07498074389911068,
+        "y": 0.2830793068744599,
+        "z": 0.0790301434744193
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1266.6666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.06857278178822969,
+        "y": 0.2862323845178649,
+        "z": 0.07836475191528618
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1300,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.0618601646185757,
+        "y": 0.2890674556251579,
+        "z": 0.07752873031043651
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1333.3333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.05487271519629743,
+        "y": 0.2915813704089938,
+        "z": 0.07652389899874933
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1366.6666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.047641477351889984,
+        "y": 0.2937713358893477,
+        "z": 0.07535244588241867
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1400,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.04019857801870861,
+        "y": 0.29563491899653804,
+        "z": 0.07401692166305347
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1433.3333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.032577084499473906,
+        "y": 0.29717004927438756,
+        "z": 0.07252023428782431
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1466.6666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.024810857554906033,
+        "y": 0.2983750211805169,
+        "z": 0.0708656426177499
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1500,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.016934400967184064,
+        "y": 0.29924849598121633,
+        "z": 0.06905674933190992
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1533.3333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.008982708246591264,
+        "y": 0.2997895032387898,
+        "z": 0.06709749308303424
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1566.6666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.0009911071623965137,
+        "y": 0.29999744188971933,
+        "z": 0.06499213992154919
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1600,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.00700489721130961,
+        "y": 0.29987208091245154,
+        "z": 0.06274527400675362
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1633.3333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.014969780237507854,
+        "y": 0.29941355958406446,
+        "z": 0.06036178762535025
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1666.6666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.022868155545058246,
+        "y": 0.2986223873255295,
+        "z": 0.05784687053906597
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.95,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1700,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.030664932243219745,
+        "y": 0.29749944313574056,
+        "z": 0.05520599868455491
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.95,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1733.3333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.03832547082341086,
+        "y": 0.2960459746149392,
+        "z": 0.05244492225018943
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.95,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1766.6666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.04581573705556936,
+        "y": 0.2942635965786202,
+        "z": 0.04956965315570015
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1800,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.053102453195382295,
+        "y": 0.29215428926345854,
+        "z": 0.04658645196192655
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1833.3333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.060153245830601366,
+        "y": 0.2897203961272499,
+        "z": 0.043501814239181036
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1866.6666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.06693678970959385,
+        "y": 0.28696462124530997,
+        "z": 0.04032245642390705
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1900,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.07342294691312627,
+        "y": 0.28389002630622434,
+        "z": 0.037055301194427646
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1933.3333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.07958290075107002,
+        "y": 0.28050002721028733,
+        "z": 0.033707462397626
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 1966.6666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.08538928378915157,
+        "y": 0.2767983902744087,
+        "z": 0.030286229559379423
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2000,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.09081629943695138,
+        "y": 0.2727892280477045,
+        "z": 0.02679905201247241
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2033.3333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.09583983655695935,
+        "y": 0.26847699474242104,
+        "z": 0.02325352267654948
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2066.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.100437576585503,
+        "y": 0.2638664812852685,
+        "z": 0.01965736152542391
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2100,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.10458909268963058,
+        "y": 0.2589628099946621,
+        "z": 0.01601839877774164
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.013451120387480482,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2133.3333333333335,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.10827594051941615,
+        "y": 0.25377142888978377,
+        "z": 0.012344557847599148
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.09323936388039492,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2166.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11148174015249142,
+        "y": 0.24829810563778815,
+        "z": 0.008643838092239887
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.17209599047025242,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2200,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11419224886674192,
+        "y": 0.242548921145877,
+        "z": 0.004924297394393052
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.24923309081070297,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2233.3333333333335,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.1163954244178527,
+        "y": 0.23653026280536127,
+        "z": 0.0011940346171803572
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.3238799364932787,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2266.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11808147854057467,
+        "y": 0.23024881739521638,
+        "z": -0.0025388280302078574
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.39529068091088654,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2300,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11924292043601573,
+        "y": 0.22371156365301606,
+        "z": -0.006266162677669189
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.46275181151055955,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2333.3333333333335,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11987459005175138,
+        "y": 0.21692576452149737,
+        "z": -0.009979853491671903
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.95,
+        "jawOpen": 0.5255892789750313,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2366.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11997368100689863,
+        "y": 0.20989895907937153,
+        "z": -0.01367181434652957
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.95,
+        "jawOpen": 0.5831752321007008,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2400,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11953975306030087,
+        "y": 0.20263895416534528,
+        "z": -0.01733400643099037
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.95,
+        "jawOpen": 0.6349342910793222,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2433.3333333333335,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11857473406643079,
+        "y": 0.19515381570465892,
+        "z": -0.02095845575180444
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.6803492965028513,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2466.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11708291141032115,
+        "y": 0.1874518597477767,
+        "z": -0.02453727049615815
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7189664766493016,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2500,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11507091295957661,
+        "y": 0.17954164323118693,
+        "z": -0.028062658215169588
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7503999814197911,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2533.3333333333335,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11254767761809285,
+        "y": 0.17143195447057422,
+        "z": -0.03152694279103115
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7743357376251891,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2566.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.10952441561230676,
+        "y": 0.16313180339692873,
+        "z": -0.03492258115085481
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7905345871016004,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2600,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.10601455868641838,
+        "y": 0.15465041154643924,
+        "z": -0.038242179690827396
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7988346762996841,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2633.3333333333335,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.10203370042785632,
+        "y": 0.14599720181528947,
+        "z": -0.04147851037491502
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7991530734718176,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2666.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.0975995269881096,
+        "y": 0.1371817879907436,
+        "z": -0.04462452647306254
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7914865972987055,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2700,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.09273173850671845,
+        "y": 0.12821396407014893,
+        "z": -0.04767337790462112
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7759118486760688,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2733.3333333333335,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.0874519615875223,
+        "y": 0.11910369337972496,
+        "z": -0.050618426153594215
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7525844453438185,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2766.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.08178365321601415,
+        "y": 0.10986109750522498,
+        "z": -0.05345325872322687
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7217374670050347,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2800,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.0757519965446786,
+        "y": 0.10049644504677153,
+        "z": -0.05617170309846441
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.6836791264706252,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2833.3333333333335,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.06938378900931706,
+        "y": 0.09102014021035683,
+        "z": -0.05876784018587919
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.6387896900987923,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2866.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.06270732327343809,
+        "y": 0.08144271124868477,
+        "z": -0.06123601720180131
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.5875176782992908,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2900,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.05575226152965088,
+        "y": 0.07177479876419472,
+        "z": -0.06357085998059174
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.5303753840657467,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2933.3333333333335,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.048549503716518054,
+        "y": 0.06202714388726509,
+        "z": -0.06576728467625659
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.46793375431341055,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 2966.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.04113105023635166,
+        "y": 0.05221057634272875,
+        "z": -0.0678205088319249
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.40081668516630775,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3000,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.0335298597838711,
+        "y": 0.042336002417960164,
+        "z": -0.06972606179308702
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.3296947881934053,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3033.3333333333335,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.025779702917359825,
+        "y": 0.03241439284589944,
+        "z": -0.07147979444191986
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.2552786898794817,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3066.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.01791501202287665,
+        "y": 0.02245677061647816,
+        "z": -0.0730778882315036
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.17831193128019673,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3100,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.009970728338099567,
+        "y": 0.012474198729987148,
+        "z": -0.0745168635002594
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.09956353880564937,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3133.3333333333335,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.001982146715443379,
+        "y": 0.0024777679059912842,
+        "z": -0.07579358704850384
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.019820340362686213,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3166.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.006015241185860726,
+        "y": -0.007521415738550726,
+        "z": -0.0769052789606233
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3200,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.013985904582059236,
+        "y": -0.017512243028274026,
+        "z": -0.0778495186580139
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3233.3333333333335,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.021894431420992125,
+        "y": -0.027483614071792364,
+        "z": -0.07862425016960704
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3266.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.02970568571070918,
+        "y": -0.037424450593769636,
+        "z": -0.07922778660850513
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3300,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.037384963621605344,
+        "y": -0.04732370824297446,
+        "z": -0.07965881384497962
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3333.3333333333335,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.04489814766854639,
+        "y": -0.05717038886264561,
+        "z": -0.07991639336783427
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.95,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3366.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.05221185828798371,
+        "y": -0.06695355270953422,
+        "z": -0.07999996432790299
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.95,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3400,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.05929360213663298,
+        "y": -0.07666233060804936,
+        "z": -0.07990934475923314
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.95,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3433.3333333333335,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.06611191645285375,
+        "y": -0.08628593602600118,
+        "z": -0.07964473197529495
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3466.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.07263650883936294,
+        "y": -0.09581367705852716,
+        "z": -0.07920670213935466
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3500,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.07883839184625469,
+        "y": -0.10523496830688595,
+        "z": -0.07859620900994661
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3533.3333333333335,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.0846900117564026,
+        "y": -0.1145393426389234,
+        "z": -0.07781458186417607
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3566.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.09016537100107537,
+        "y": -0.12371646281814204,
+        "z": -0.0768635226033744
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3600,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.09524014366189838,
+        "y": -0.13275613298845573,
+        "z": -0.07574510204740871
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3633.3333333333335,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.09989178354601029,
+        "y": -0.14164831000187034,
+        "z": -0.07446175542571488
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3666.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.10409962435425671,
+        "y": -0.1503831145765034,
+        "z": -0.07301627707487121
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3700,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.10784497149739522,
+        "y": -0.15895084227254802,
+        "z": -0.07141181435425878
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3733.3333333333335,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.1111111851523901,
+        "y": -0.16734197427398464,
+        "z": -0.06965186079305592
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3766.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.113883754189795,
+        "y": -0.17554718796406504,
+        "z": -0.06774024848348868
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3800,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11615036064377836,
+        "y": -0.18355736728281566,
+        "z": -0.0656811397368998
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3833.3333333333335,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11790093443836477,
+        "y": -0.19136361285505557,
+        "z": -0.06347901802080473
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3866.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11912769812675437,
+        "y": -0.19895725187767507,
+        "z": -0.06113867819666741
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3900,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.1198252014449526,
+        "y": -0.20632984775519211,
+        "z": -0.05866521607965252
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3933.3333333333335,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11999034552619542,
+        "y": -0.21347320947287893,
+        "z": -0.0560640173430863
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 3966.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11962239666859029,
+        "y": -0.22037940069704695,
+        "z": -0.05334074579178509
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4000,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11872298959480582,
+        "y": -0.22704074859237844,
+        "z": -0.05050133102978573
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4033.3333333333335,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.1172961201893282,
+        "y": -0.23344985234651067,
+        "z": -0.04755195554932874
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4066.6666666666665,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11534812774555131,
+        "y": -0.23959959139239836,
+        "z": -0.044499041269207604
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4100,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11288766680157276,
+        "y": -0.24548313331932306,
+        "z": -0.041349235551794365
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4133.333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.10992566868982426,
+        "y": -0.25109394146375746,
+        "z": -0.0381093967291889
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4166.666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.10647529297136334,
+        "y": -0.25642578217165196,
+        "z": -0.034786579170006174
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4200,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.10255186897059367,
+        "y": -0.2614727317240764,
+        "z": -0.03138801791931631
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.02689843777691078,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4233.333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.09817282767016423,
+        "y": -0.2662291829185202,
+        "z": -0.027921112945184127
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.10658563313595378,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4266.666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.09335762426862412,
+        "y": -0.2706898512985404,
+        "z": -0.02439341302610733
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.18520786008123116,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4300,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.0881276517448936,
+        "y": -0.2748497810248365,
+        "z": -0.020812599314437512
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.2619795513101531,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4333.333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.08250614581356738,
+        "y": -0.27870435038122854,
+        "z": -0.01718646861157329
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.33613362946131276,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4366.666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.07651808169331448,
+        "y": -0.28224927690942225,
+        "z": -0.01352291639134021
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.40692917149789776,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4400,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.0701900631470114,
+        "y": -0.2854806221668548,
+        "z": -0.009829919608524003
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.4736588117657796,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4433.333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.06355020428658258,
+        "y": -0.2883947961023374,
+        "z": -0.006115519329988193
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.5356558097572819,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4466.666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.056628004667662275,
+        "y": -0.2909885610446317,
+        "z": -0.0023878032261948905
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.5923007119619589,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4500,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.04945421822901079,
+        "y": -0.29325903529952907,
+        "z": 0.0013451120387479771
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.6430275412412968,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4533.333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.042060716658958365,
+        "y": -0.2952036963514367,
+        "z": 0.005075098480169281
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.6873294518851967,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4566.666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.03448034779591294,
+        "y": -0.29682038366591296,
+        "z": 0.008794034490567494
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7247637938467695,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4600,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.026746789692029715,
+        "y": -0.2981073010900393,
+        "z": 0.012493822523456884
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7549565355552834,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4633.333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.018894400988408076,
+        "y": -0.2990630188479607,
+        "z": 0.016166406724824535
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7776060011159811,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4666.666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.010958068266569915,
+        "y": -0.29968647512937846,
+        "z": 0.01980379047380612
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.95,
+        "jawOpen": 0.7924858845558963,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4700,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.002973051054402932,
+        "y": -0.2999769772692302,
+        "z": 0.023398053794389577
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.95,
+        "jawOpen": 0.7994475109983342,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4733.333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.005025174824819609,
+        "y": -0.2999342025172466,
+        "z": 0.026941370600232117
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.95,
+        "jawOpen": 0.7984213221730894,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4766.666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.013001074864376965,
+        "y": -0.29955819839652914,
+        "z": 0.030426025735044965
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7894175714196907,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4800,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.020919213746757558,
+        "y": -0.29884938265075217,
+        "z": 0.03384443177143975
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7725262212394224,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4833.333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.02874441277563791,
+        "y": -0.2978085427800458,
+        "z": 0.037189145531660944
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7479160444197465,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4866.666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.036441906167745355,
+        "y": -0.296436835166077,
+        "z": 0.040452884294231654
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.715832937712404,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4900,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.043977495510231404,
+        "y": -0.29473578378729975,
+        "z": 0.04362854165122416
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.6765974649143467,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4933.333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.05131770169733161,
+        "y": -0.29270727852580286,
+        "z": 0.046709202981628714
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.630601653900253,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 4966.666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.058429913671290884,
+        "y": -0.2903535730676351,
+        "z": 0.049688160507129375
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.5783050796095809,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5000,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.06528253330672437,
+        "y": -0.2876772823989415,
+        "z": 0.052558927897503126
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.95,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.5202302721256935,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5033.333333333333,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.07184511579472484,
+        "y": -0.2846813799006923,
+        "z": 0.05531525439384251
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.95,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.45695749572799094,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5066.666666666667,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.07808850490301693,
+        "y": -0.28136919404523214,
+        "z": 0.05795113841884935
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.95,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.3891189510830398,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5100,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.08398496251122507,
+        "y": -0.27774440469831974,
+        "z": 0.06046084064456425
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.31739245850449094,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5133.333333333333,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.08950829184575597,
+        "y": -0.2738110390307669,
+        "z": 0.06283889648907978
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.2424946853965605,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5166.666666666667,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.0946339538667869,
+        "y": -0.2695734670442189,
+        "z": 0.06508012801502534
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.1651739855502373,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5200,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.09933917629027844,
+        "y": -0.26503639671604595,
+        "z": 0.06717965520391836
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.08620292183955384,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5233.333333333333,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.10360305476064535,
+        "y": -0.2602048687687421,
+        "z": 0.06913290658183127
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.006370547028749875,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5266.666666666667,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.1074066457245985,
+        "y": -0.25508425106964083,
+        "z": 0.07093562917323917
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5300,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11073305059353679,
+        "y": -0.24968023266717038,
+        "z": 0.0725838977613747
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5333.333333333333,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11356749082057295,
+        "y": -0.243998817470274,
+        "z": 0.07407412343492671
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5366.666666666667,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11589737355864088,
+        "y": -0.23804631757801775,
+        "z": 0.0754030614024731
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5400,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11771234760797898,
+        "y": -0.23182934626679613,
+        "z": 0.07656781805763335
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5433.333333333333,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11900434940442582,
+        "y": -0.22535481064292845,
+        "z": 0.07756585727955635
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5466.666666666667,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11976763884421188,
+        "y": -0.21862990396880577,
+        "z": 0.078395005955026
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5500,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11999882478608441,
+        "y": -0.21166209767111757,
+        "z": 0.07905345871016002
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5533.333333333333,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11969688011746503,
+        "y": -0.20445913304003538,
+        "z": 0.07953978184139954
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5566.666666666667,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11886314631770409,
+        "y": -0.19702901262857545,
+        "z": 0.07985291643723026
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5600,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11750132749815809,
+        "y": -0.18937999136169648,
+        "z": 0.07999218068383802
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5633.333333333333,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.1156174739455688,
+        "y": -0.18152056736500977,
+        "z": 0.07995727134967819
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5666.666666666667,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11321995524185817,
+        "y": -0.17345947252329266,
+        "z": 0.07974826444572687
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5700,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.11031942307976109,
+        "y": -0.16520566277929127,
+        "z": 0.07936561505997584
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5733.333333333333,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.10692876393950006,
+        "y": -0.15676830818359522,
+        "z": 0.07881015636653196
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5766.666666666667,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.10306304183674891,
+        "y": -0.1481567827066357,
+        "z": 0.07808309781147826
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5800,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.09873943139624505,
+        "y": -0.1393806538241272,
+        "z": 0.07718602247944731
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5833.333333333333,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.0939771415483908,
+        "y": -0.13044967188752316,
+        "z": 0.07612088364664009
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5866.666666666667,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.08879733018784429,
+        "y": -0.12137375929129514,
+        "z": 0.07489000052779661
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5900,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.08322301017325469,
+        "y": -0.11216299944907081,
+        "z": 0.07349605322637798
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5933.333333333333,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.07727894708576649,
+        "y": -0.10282762559087916,
+        "z": 0.07194207689895596
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 5966.666666666667,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.07099154920052964,
+        "y": -0.09337800939394635,
+        "z": 0.07023145514651578
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6000,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.06438875016005219,
+        "y": -0.08382464945967776,
+        "z": 0.06836791264706252
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6033.333333333333,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.057499884870652454,
+        "y": -0.07417815964962526,
+        "z": 0.06635550704557162
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6066.666666666667,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.050355559173378285,
+        "y": -0.06444925729339956,
+        "z": 0.06419862011894403
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6100,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.042987513868419445,
+        "y": -0.054648751281628764,
+        "z": 0.06190194823520107
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6133.333333333333,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.0354284836971248,
+        "y": -0.044787530057191625,
+        "z": 0.059470492127694716
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6166.666666666667,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.02771205190814017,
+        "y": -0.0348765495180689,
+        "z": 0.05690954600659775
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6200,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.019872501053797127,
+        "y": -0.02492682084524892,
+        "z": 0.05422468603138293
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6233.333333333333,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.011944660679638387,
+        "y": -0.014949398269215871,
+        "z": 0.05142175816939039
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6266.666666666667,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.003963752583761484,
+        "y": -0.004955366788608448,
+        "z": 0.048506865466920165
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6300,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.004034765666536403,
+        "y": 0.005044170145304914,
+        "z": 0.04548635476056569
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.040338150245448984,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6333.333333333333,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.012015358265588732,
+        "y": 0.015038102964651816,
+        "z": 0.04236680285772185
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.11990176773036187,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6366.666666666667,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.019942569047787174,
+        "y": 0.025015328327777298,
+        "z": 0.039155002216359806
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.1982673663863651,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6400,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.027781179012184673,
+        "y": 0.03496476145514809,
+        "z": 0.03585794615524692
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.274651943055919,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6433.333333333333,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.035496362793422644,
+        "y": 0.04487534844463291,
+        "z": 0.03248281362681637
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.3482922882983146,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6466.666666666667,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.04305384338381657,
+        "y": 0.05473607855248032,
+        "z": 0.029036953585841192
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.41845261212615714,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6500,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.05042004441919691,
+        "y": 0.06453599642634465,
+        "z": 0.02552786898794817
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.48443189577568085,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6533.333333333333,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.05756223935193287,
+        "y": 0.07426421427677296,
+        "z": 0.021963200452812952
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.5455708960545085,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6566.666666666667,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.06444869684839241,
+        "y": 0.0839099239736287,
+        "z": 0.01835070962760802
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.6012587322817187,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6600,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.07104882176486677,
+        "y": 0.09346240905401336,
+        "z": 0.01469826228692678
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.6509389900056828,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6633.333333333333,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.07733329107563214,
+        "y": 0.1029110566283452,
+        "z": 0.011013811205983666
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.6941152805133353,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6666.666666666667,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.08327418414924674,
+        "y": 0.11224536917136599,
+        "z": 0.007305378844379944
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.95,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7303562005821022,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6700,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.08884510679429383,
+        "y": 0.12145497618497948,
+        "z": 0.0035810398781393644
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.95,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7592996429183158,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6733.333333333333,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.0940213085234578,
+        "y": 0.1305296457199593,
+        "z": -0.0001510963819507677
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.95,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7806564142135805,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6766.666666666667,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.09877979251495465,
+        "y": 0.13945929574372876,
+        "z": -0.0038829036474109196
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7942131246687257,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6800,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.10309941778277949,
+        "y": 0.14823400534158243,
+        "z": -0.007606256346108876
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7998343201141354,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6833.333333333333,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.10696099310184962,
+        "y": 0.15684402573890385,
+        "z": -0.011313047314738816
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7974638354230394,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6866.666666666667,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.1103473622707523,
+        "y": 0.16527979113213437,
+        "z": -0.014995205451217318
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7871253556948934,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6900,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11324348033329257,
+        "y": 0.17353192931646005,
+        "z": -0.01864471328856115
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7689221796016925,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6933.333333333333,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11563648042020307,
+        "y": 0.18159127209840736,
+        "z": -0.022253624451978822
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7430361872617923,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 6966.666666666667,
+      "faceDetected": false,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11751573091405333,
+        "y": 0.18944886548178308,
+        "z": -0.02581408096116987
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.7097260229538809,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7000,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11887288268338443,
+        "y": 0.1970959796156367,
+        "z": -0.02931833034015414
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.95,
+        "jawOpen": 0.6693245108288449,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7033.333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11970190617621866,
+        "y": 0.20452411849319727,
+        "z": -0.03275874249737727
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.95,
+        "jawOpen": 0.6222353294408743,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7066.666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11999911820814455,
+        "y": 0.21172502939100651,
+        "z": -0.03612782633933966
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.95,
+        "jawOpen": 0.5689289783247861,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7100,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.1197631983259634,
+        "y": 0.21869071203776277,
+        "z": -0.03941824608157282
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.5099380769201932,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7133.333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11899519467419696,
+        "y": 0.22541342750268842,
+        "z": -0.042622837221448696
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.44585204281412677,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7166.666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11769851933839237,
+        "y": 0.23188570679354492,
+        "z": -0.04573462213804287
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.37731120247535693,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7200,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11587893318591329,
+        "y": 0.23810035915474595,
+        "z": -0.048746825285084866
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.3050003933239521,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7233.333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.11354452027156646,
+        "y": 0.24405048005634503,
+        "z": -0.05165288794391449
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.22964212106218276,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7266.666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.1107056519217743,
+        "y": 0.24972945886502573,
+        "z": -0.05444648250432154
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.1519893406363502,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7300,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.1073749406568605,
+        "y": 0.25513098618856933,
+        "z": -0.057121526242174446
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0.0728179329598783,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7333.333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.10356718415616234,
+        "y": 0.26024906088564176,
+        "z": -0.05967219456383722
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7366.666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.0992992995149217,
+        "y": 0.26507799673311105,
+        "z": -0.06209293368853858
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7400,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.09459024808503795,
+        "y": 0.26961242874348806,
+        "z": -0.06437847274107737
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7433.333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.08946095123360077,
+        "y": 0.2738473191254713,
+        "z": -0.06652383522853438
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7466.666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.08393419739346912,
+        "y": 0.2777779628809752,
+        "z": -0.06852434987600135
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7500,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.07803454081885401,
+        "y": 0.28139999303242164,
+        "z": -0.07037566079773361
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7533.333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.07178819249571244,
+        "y": 0.2847093854744875,
+        "z": -0.0720737369815797
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7566.666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.06522290369161553,
+        "y": 0.2877024634449192,
+        "z": -0.07361488106603731
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7600,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.05836784266245596,
+        "y": 0.2903759016094459,
+        "z": -0.07499573739082341
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7633.333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.051253465063761446,
+        "y": 0.29272672975625297,
+        "z": -0.07621329930343079
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7666.666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.04391137864235173,
+        "y": 0.29475233609591195,
+        "z": -0.07726491570576059
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7700,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.03637420280948427,
+        "y": 0.2964504701631001,
+        "z": -0.0781482968265775
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7733.333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.028675423719380366,
+        "y": 0.2978192453168859,
+        "z": -0.07886151920721743
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7766.666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.02084924549698596,
+        "y": 0.2988571408368027,
+        "z": -0.07940302988969299
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7800,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.012930438275933287,
+        "y": 0.2995630036123815,
+        "z": -0.0797716497980772
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7833.333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": 0.004954183721839936,
+        "y": 0.2999360494242663,
+        "z": -0.07996657630580288
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7866.666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.0030440812727458287,
+        "y": 0.2999758638154886,
+        "z": -0.0799873849832877
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7900,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.011028822027321796,
+        "y": 0.29968240255193157,
+        "z": -0.07983403052207975
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7933.333333333333,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.018964563946859674,
+        "y": 0.29905599167147573,
+        "z": -0.07950684683351152
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 7966.666666666667,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.026816050128287403,
+        "y": 0.2980973271217672,
+        "z": -0.07900654632164693
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "timestamp": 8000,
+      "faceDetected": true,
+      "inferenceMs": 0,
+      "rotation": {
+        "x": -0.034548397999807835,
+        "y": 0.2968074739870145,
+        "z": -0.0783342183321054
+      },
+      "channels": {
+        "eyeBlinkLeft": 0.02,
+        "eyeBlinkRight": 0.02,
+        "jawOpen": 0,
+        "mouthSmileLeft": 0.4,
+        "mouthSmileRight": 0.4
+      }
+    }
+  ]
+}

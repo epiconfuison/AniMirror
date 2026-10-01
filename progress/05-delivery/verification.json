@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-30",
+  "timezone": "Asia/Shanghai",
+  "delivery": "engineering-preview",
+  "typescript": "passed",
+  "productionBuild": "passed",
+  "unitAndIntegrationTests": { "passed": 38, "failed": 0 },
+  "productionBrowserTests": {
+    "passed": 7,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0,
+    "durationSecondsRounded": 55.2,
+    "server": "standalone Node server",
+    "rawReport": ".cache/production-browser-results.json"
+  },
+  "staticFaceInference": {
+    "passedFrames": 3,
+    "landmarksPerFrame": 478,
+    "namedActionChannelsPerFrame": 51,
+    "evidence": "progress/02-tracking/STATIC_CHECK.md"
+  },
+  "artifact": {
+    "path": ".cache/releases/AR-Capture-v0.1.0-preview.zip",
+    "bytes": 10359787,
+    "sha256": "507a0f8f09b5b940d661b8afc2676731b269ff3dff8e79a2d5971e2a827bc00b"
+  },
+  "openAcceptance": [
+    "Production anime model materials, hair and skinning",
+    "Real webcam axes and gesture quality",
+    "Three participants and twenty repetitions per gesture",
+    "Real-time throughput, P95 and neutral-face false activations",
+    "Thirty-minute stability with ten model and camera switches"
+  ]
+}

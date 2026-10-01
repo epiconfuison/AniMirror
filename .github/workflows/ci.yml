@@ -1,0 +1,45 @@
+name: Test AniMirror
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.25.0
+          run_install: false
+      - name: Install locked dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Check upload file boundaries
+        run: pnpm check:upload
+      - name: Prepare local inference resources
+        run: pnpm assets:setup
+      - name: Unit and integration tests
+        run: pnpm test
+      - name: Build production app
+        run: pnpm build
+      - name: Production browser tests with a simulated camera
+        run: pnpm test:e2e:build
+      - name: Upload browser failure evidence
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-failure-evidence
+          path: |
+            .cache/playwright-results/
+            .cache/production-browser-results.json
+          if-no-files-found: ignore
+          retention-days: 7

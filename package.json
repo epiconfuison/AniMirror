@@ -1,0 +1,26 @@
+{
+  "name": "animirror", "version": "0.1.0", "private": true, "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "node scripts/collect-licenses.mjs && tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run",
+    "test:e2e": "node scripts/test-browser.mjs",
+    "test:e2e:build": "node scripts/test-browser.mjs --production",
+    "assets:setup": "node scripts/setup-assets.mjs",
+    "check:upload": "node scripts/prepare-github.mjs --check",
+    "prepare:github": "node scripts/prepare-github.mjs"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "0.10.32", "@pixiv/three-vrm": "3.4.2",
+    "react": "19.2.0", "react-dom": "19.2.0", "three": "0.180.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1", "@types/node": "24.10.0",
+    "@types/react": "19.2.2", "@types/react-dom": "19.2.2", "@types/three": "0.180.0",
+    "@vitejs/plugin-react": "5.0.4", "fake-indexeddb": "6.2.4",
+    "typescript": "5.9.3", "vite": "7.1.12", "vitest": "3.2.4"
+  }
+}

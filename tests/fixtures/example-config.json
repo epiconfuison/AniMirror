@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "model": {
+    "schemaVersion": 1,
+    "modelHash": "0066a7756f11560bd1b38b9b31c4c2e8ec2bfa2b28b48aad764d2285f83e2893",
+    "modelName": "Mika · VRM 1 rich diagnostic",
+    "mappings": [
+      {
+        "id": "eyeBlinkLeft:blinkLeft",
+        "input": "eyeBlinkLeft",
+        "target": "blinkLeft",
+        "weight": 1,
+        "enabled": true,
+        "approximate": false,
+        "confirmed": true
+      },
+      {
+        "id": "eyeBlinkRight:blinkRight",
+        "input": "eyeBlinkRight",
+        "target": "blinkRight",
+        "weight": 1,
+        "enabled": true,
+        "approximate": false,
+        "confirmed": true
+      },
+      {
+        "id": "jawOpen:aa",
+        "input": "jawOpen",
+        "target": "aa",
+        "weight": 1,
+        "enabled": true,
+        "approximate": false,
+        "confirmed": true
+      },
+      {
+        "id": "mouthSmileLeft:happy",
+        "input": "mouthSmileLeft",
+        "target": "happy",
+        "weight": 0.5,
+        "enabled": true,
+        "approximate": true,
+        "confirmed": false
+      },
+      {
+        "id": "mouthSmileRight:happy",
+        "input": "mouthSmileRight",
+        "target": "happy",
+        "weight": 0.5,
+        "enabled": true,
+        "approximate": true,
+        "confirmed": false
+      }
+    ],
+    "tuning": {},
+    "headLimits": {
+      "x": 0.7853981633974483,
+      "y": 1.0471975511965976,
+      "z": 0.6283185307179586
+    },
+    "headGain": 1,
+    "smoothing": 0.5,
+    "style": "natural",
+    "eyeMode": "expression"
+  },
+  "ui": {
+    "schemaVersion": 1,
+    "background": "#dce9e5",
+    "framing": "half",
+    "mirror": true,
+    "showVideo": true
+  }
+}
