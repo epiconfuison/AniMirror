@@ -20,8 +20,8 @@ node scripts/check-static-tracking.mjs
 
 | 项目 | 结果 |
 | --- | --- |
-| 浏览器 | Microsoft Edge 154.0.4258.37 |
-| Node / MediaPipe | 24.19.0 / tasks-vision 0.10.32 |
+| 浏览器 | Microsoft Edge |
+| Node / MediaPipe | Node 24 / tasks-vision 0.10.32 |
 | 执行方式 | classic Worker、CPU、VIDEO、单人 |
 | 三帧人脸数量 | 每帧 1 |
 | 三帧 landmark 数量 | 每帧 478 |

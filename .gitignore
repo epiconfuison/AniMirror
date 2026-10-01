@@ -43,3 +43,11 @@ final-test-results/
 *.mp4
 *.webm
 *.zip
+
+# Local environment records and manual test documents stay out of releases.
+/docs/SANDBOX_REPAIR.md
+/docs/ACCEPTANCE.md
+/docs/FINAL_TEST_GUIDE.md
+/docs/final-test-templates/
+/progress/00-workspace/
+/progress/06-final-test-guide/

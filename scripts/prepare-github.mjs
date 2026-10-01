@@ -10,7 +10,9 @@ const requiredTopFiles = new Set(['.gitignore', 'README.md', 'index.html', 'pack
   'pnpm-lock.yaml', 'pnpm-workspace.yaml', 'playwright.config.ts', 'tsconfig.json', 'vite.config.ts']);
 const topFiles = new Set([...requiredTopFiles, 'LICENSE', 'LICENSE.md', 'LICENSE.txt', 'NOTICE', '.env.example']);
 const sourceDirectories = ['.github', 'docs', 'progress', 'scripts', 'src', 'tests'];
-const localOnly = new Set(['docs/SANDBOX_REPAIR.md']);
+const localOnly = new Set(['docs/SANDBOX_REPAIR.md', 'docs/ACCEPTANCE.md', 'docs/FINAL_TEST_GUIDE.md',
+  'docs/final-test-templates', 'progress/00-workspace', 'progress/06-final-test-guide']);
+const isLocalOnly = relative => [...localOnly].some(entry => relative === entry || relative.startsWith(`${entry}/`));
 const originalModels = new Map([
   ['tests/fixtures/diagnostic-vrm0.vrm', '1ec92bb9d5004f88a77091a5f5e43b1b75aa58bd2668b0d940367c1f2113ecb2'],
   ['tests/fixtures/diagnostic-vrm1-rich.vrm', '0066a7756f11560bd1b38b9b31c4c2e8ec2bfa2b28b48aad764d2285f83e2893'],
@@ -28,7 +30,7 @@ const forbidden = relative => (relative !== '.env.example' && /(?:^|\/)(?:\.env(
   || /\.(?:pem|key|p12|pfx|har|heapsnapshot|mp4|webm|zip|task|wasm|tsbuildinfo|log|glb|gltf|fbx|blend|vroid)$/i.test(relative)
   || /(?:^|\/)(?:\.git|\.aws|\.codex|\.agents|node_modules|dist|\.cache|\.pnpm-store|models|user-models|local-data|final-test-results)(?:\/|$)/i.test(relative)
   || (/\.vrm$/i.test(relative) && !originalModels.has(relative));
-const permitted = relative => !localOnly.has(relative) && !forbidden(relative)
+const permitted = relative => !isLocalOnly(relative) && !forbidden(relative)
   && (topFiles.has(relative) || sourceDirectories.some(dir => relative.startsWith(`${dir}/`))
     || relative === 'public/THIRD_PARTY_LICENSES.txt');
 const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
@@ -37,7 +39,7 @@ const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
 const candidates = new Set();
 const ignoredLocalFiles = [];
 async function collect(relative) {
-  if (localOnly.has(relative) || forbidden(relative)) { ignoredLocalFiles.push(relative); return; }
+  if (isLocalOnly(relative) || forbidden(relative)) { ignoredLocalFiles.push(relative); return; }
   const absolute = path.join(root, relative);
   let info;
   try { info = await lstat(absolute); } catch (error) { if (error.code === 'ENOENT') return; throw error; }
