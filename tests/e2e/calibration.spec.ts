@@ -65,9 +65,14 @@ async function exportJSON(page: Page, testInfo: TestInfo, button: string, file: 
 }
 
 test('four calibration steps save ranges, restore after reload, and stay cleared after reload', async ({ page }, testInfo) => {
+  await page.clock.install();
   await page.goto('/');
+  // This test covers calibration/persistence; 3D rendering is covered in studio.spec.
+  // Keep virtual-clock advancement independent of software renderer throughput.
+  await page.locator('.viewport-shell').evaluate(element => { (element as HTMLElement).style.display = 'none'; });
   await page.getByRole('button', { name: '开启摄像头', exact: true }).click();
   await expect(page.getByText('追踪运行中', { exact: true })).toBeVisible();
+  await page.clock.pauseAt(new Date(Date.now() + 1000));
   const panel = page.locator('section.panel').filter({ has: page.getByRole('heading', { name: '个人校准', exact: true }) });
   const steps = [
     { label: '中性脸', channels: baseline },
@@ -79,9 +84,11 @@ test('four calibration steps save ranges, restore after reload, and stay cleared
     await page.evaluate(channels => { (window as unknown as MockWindow).mockChannels = channels; }, step.channels);
     await panel.getByRole('button', { name: step.label, exact: true }).click();
     await panel.getByRole('button', { name: `采集${step.label}`, exact: true }).click();
+    await page.clock.runFor(3200);
     await expect(panel.getByRole('status')).toContainText('本步已保存', { timeout: 7000 });
     await expect(panel.getByRole('button', { name: `✓ ${step.label}`, exact: true })).toBeVisible();
   }
+  await page.clock.resume();
   const exported = await exportJSON(page, testInfo, '导出 JSON', 'calibration.json');
   expect(exported.json.calibration.neutral.jawOpen).toBeCloseTo(0.05);
   const expectedRanges = { eyeBlinkLeft: 0.75, eyeBlinkRight: 0.7, jawOpen: 0.8, mouthSmileLeft: 0.65, mouthSmileRight: 0.6 };
