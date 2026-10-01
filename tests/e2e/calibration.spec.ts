@@ -21,25 +21,36 @@ test.beforeEach(async ({ page }) => {
       onmessage: ((event: MessageEvent) => void) | null = null;
       onerror: ((event: ErrorEvent) => void) | null = null;
       closed = false;
+      timer: number | null = null;
+      emitFrame() {
+        if (this.closed) return;
+        host.mockFrameCount++;
+        this.onmessage?.({ data: { type: 'result', timestamp: performance.now(), inferenceMs: 3,
+          result: {
+            faceLandmarks: [Array.from({ length: 478 }, () => ({ x: 0.5, y: 0.5, z: 0 }))],
+            faceBlendshapes: [{ categories: Object.entries(host.mockChannels).map(([categoryName, score]) => ({ categoryName, score })) }],
+            facialTransformationMatrixes: [{ data: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1] }],
+          },
+        } } as MessageEvent);
+      }
       postMessage(message: { type: string; bitmap?: ImageBitmap; timestamp?: number }) {
-        if (message.type === 'dispose') { this.closed = true; return; }
+        if (message.type === 'dispose') { this.terminate(); return; }
         if (message.type === 'frame') message.bitmap?.close();
         setTimeout(() => {
           if (this.closed) return;
-          if (message.type === 'init') this.onmessage?.({ data: { type: 'ready' } } as MessageEvent);
-          if (message.type === 'frame') {
-            host.mockFrameCount++;
-            this.onmessage?.({ data: { type: 'result', timestamp: message.timestamp, inferenceMs: 3,
-              result: {
-                faceLandmarks: [Array.from({ length: 478 }, () => ({ x: 0.5, y: 0.5, z: 0 }))],
-                faceBlendshapes: [{ categories: Object.entries(host.mockChannels).map(([categoryName, score]) => ({ categoryName, score })) }],
-                facialTransformationMatrixes: [{ data: [1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1] }],
-              },
-            } } as MessageEvent);
+          if (message.type === 'init') {
+            this.onmessage?.({ data: { type: 'ready' } } as MessageEvent);
+            // Known UI samples at 20Hz; camera/Worker throughput is tested separately.
+            this.timer = window.setInterval(() => this.emitFrame(), 50);
           }
+          if (message.type === 'frame') this.emitFrame();
         }, 3);
       }
-      terminate() { this.closed = true; }
+      terminate() {
+        this.closed = true;
+        if (this.timer !== null) window.clearInterval(this.timer);
+        this.timer = null;
+      }
     }
     window.Worker = ParameterWorker as unknown as typeof Worker;
   }, baseline);
