@@ -53,7 +53,7 @@ pnpm preview
 
 E2E 默认使用 Windows 已安装 Edge；其他位置设置 `EDGE_EXECUTABLE`。其他系统可 `pnpm exec playwright install chromium`。模拟摄像头测试验证 Worker/资源生命周期，不能替代真实摄像头质量评估。构建产物在 `dist/`；通过 HTTP 服务运行，不能直接双击 `index.html`。本机也可用 `scripts/dev.ps1 -Preview` 启动产物，端口 4173。
 
-GitHub Actions 在 Windows 环境执行单元测试、生产构建和生产浏览器测试，浏览器测试使用模拟摄像头，无需连接真实设备。配置见 [.github/workflows/ci.yml](.github/workflows/ci.yml)；首次远程运行结果须在上传后核实。启动前必须完成 `assets:setup`。
+GitHub Actions 在 Linux 环境执行单元测试、生产构建和生产浏览器测试，安装与固定 Playwright 版本匹配的 Chromium，使用软件渲染和模拟摄像头。配置见 [.github/workflows/ci.yml](.github/workflows/ci.yml)，结果见 [Actions](https://github.com/epiconfuison/AniMirror/actions)。本机 Windows 默认仍使用 Edge；启动前必须完成 `assets:setup`。
 
 ## GitHub 测试上传
 

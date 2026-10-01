@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   test:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
@@ -23,6 +23,8 @@ jobs:
           run_install: false
       - name: Install locked dependencies
         run: pnpm install --frozen-lockfile
+      - name: Install the browser matched to Playwright
+        run: pnpm exec playwright install --with-deps --only-shell chromium
       - name: Check upload file boundaries
         run: pnpm check:upload
       - name: Prepare local inference resources

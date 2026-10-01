@@ -16,7 +16,7 @@ export default defineConfig({
     headless: true,
     viewport: { width: 1600, height: 1100 },
     launchOptions: {
-      executablePath: process.env.EDGE_EXECUTABLE ?? (process.platform === 'win32' ? 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe' : undefined),
+      executablePath: process.env.EDGE_EXECUTABLE ?? (process.platform === 'win32' && !process.env.CI ? 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe' : undefined),
       args: ['--enable-webgl', '--ignore-gpu-blocklist',
         ...(process.env.CI ? ['--use-gl=angle', '--use-angle=swiftshader'] : [])],
     },

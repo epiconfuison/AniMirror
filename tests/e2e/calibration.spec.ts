@@ -5,7 +5,7 @@ import { test, expect, type Page, type TestInfo } from '@playwright/test';
 // UI/persistence tests use known Worker parameters and a fake camera. They do not
 // test MediaPipe inference, gesture accuracy, or real camera image quality.
 test.use({ permissions: ['camera'], launchOptions: {
-  executablePath: process.env.EDGE_EXECUTABLE ?? (process.platform === 'win32' ? 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe' : undefined),
+  executablePath: process.env.EDGE_EXECUTABLE ?? (process.platform === 'win32' && !process.env.CI ? 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe' : undefined),
   args: ['--enable-webgl', '--ignore-gpu-blocklist', '--use-fake-device-for-media-stream', '--use-fake-ui-for-media-stream',
     ...(process.env.CI ? ['--use-gl=angle', '--use-angle=swiftshader'] : [])],
 } });
