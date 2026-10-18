@@ -10,6 +10,8 @@
     "test:e2e": "node scripts/test-browser.mjs",
     "test:e2e:build": "node scripts/test-browser.mjs --production",
     "assets:setup": "node scripts/setup-assets.mjs",
+    "live2d:setup": "node scripts/setup-live2d.mjs",
+    "live2d:check": "node scripts/setup-live2d.mjs --check",
     "check:upload": "node scripts/prepare-github.mjs --check",
     "prepare:github": "node scripts/prepare-github.mjs"
   },
