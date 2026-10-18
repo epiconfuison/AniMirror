@@ -3,7 +3,7 @@ import type { AvatarCapabilities, TrackingFrame } from '../../src/core/contracts
 import { CalibrationCollector, createDefaultProfile, Retargeter, suggestMappings } from '../../src/core/retargeting';
 
 const capabilities = (names = ['blinkLeft', 'blinkRight', 'aa', 'happy']): AvatarCapabilities => ({
-  version: '1', name: 'fixture', bones: { head: true, leftEye: false, rightEye: false },
+  format: 'vrm', version: '1', name: 'fixture', bones: { head: true, leftEye: false, rightEye: false },
   expressions: names.map((name) => ({ name, preset: true, bindCount: 1, isBinary: false, overrideBlink: 'none', overrideMouth: 'none', overrideLookAt: 'none' })),
   morphTargets: names, missing: [], level: 'face', vertexCount: 100,
 });
@@ -43,8 +43,7 @@ describe('semantic mapping and composition', () => {
     config.mappings = config.mappings.filter((rule) => rule.target !== 'aa');
     expect(engine.update(frame(40, { jawOpen: 1 }), config, undefined, 40).expressions.aa).toBe(0);
   });
-  it('applies personal calibration independently of model tuning and clamps head motion', () => {
-    const config = profile(); config.tuning.jawOpen = { gain: 2, deadZone: 0.1, min: 0, max: 0.7, curve: 1 };
+  it('applies personal calibration independently of model tuning and clamps head motion', () => {    const config = profile(); config.tuning.jawOpen = { gain: 2, deadZone: 0.1, min: 0, max: 0.7, curve: 1 };
     const calibrated = { schemaVersion: 1 as const, profileId: 'default', createdAt: new Date().toISOString(),
       neutral: { jawOpen: 0.2 }, ranges: { jawOpen: 0.4 }, neutralRotation: { x: 0.1, y: 0, z: 0 }, quality: { neutral: 1 } };
     const sample = frame(0, { jawOpen: 0.4 }); sample.rotation = { x: 0.3, y: 3, z: -2 };
@@ -54,6 +53,25 @@ describe('semantic mapping and composition', () => {
     expect(result.rotation.y).toBe(config.headLimits.y);
     expect(result.rotation.z).toBe(-config.headLimits.z);
     expect(calibrated.ranges.jawOpen).toBe(0.4);
+  });
+  it('drives signed Cubism targets in both directions while unipolar targets stay clamped', () => {
+    const config = profile(); config.smoothing = 0;
+    config.mappings = [
+      { id: 'in', input: 'eyeLookInLeft', target: 'ParamEyeBallX', weight: 1, enabled: true, approximate: false, confirmed: true, signed: true },
+      { id: 'out', input: 'eyeLookOutLeft', target: 'ParamEyeBallX', weight: -1, enabled: true, approximate: false, confirmed: true, signed: true },
+      { id: 'blink', input: 'eyeBlinkLeft', target: 'ParamEyeLOpen', weight: 1, enabled: true, approximate: false, confirmed: true, invert: true },
+    ];
+    const engine = new Retargeter();
+    const inward = engine.update(frame(0, { eyeLookInLeft: 0.8 }), config, undefined, 0);
+    expect(inward.expressions.ParamEyeBallX).toBeCloseTo(0.8);
+    expect(inward.expressions.ParamEyeLOpen).toBeCloseTo(1);
+    const outward = engine.update(frame(20, { eyeLookOutLeft: 0.8, eyeBlinkLeft: 0.6 }), config, undefined, 20);
+    expect(outward.expressions.ParamEyeBallX).toBeCloseTo(-0.8);
+    // Inverted eye open: closed lids (0.6) mean the Cubism openness parameter drops to 0.4.
+    expect(outward.expressions.ParamEyeLOpen).toBeCloseTo(0.4);
+    const neutral = engine.update(frame(40, {}), config, undefined, 40);
+    expect(neutral.expressions.ParamEyeBallX).toBeCloseTo(0);
+    expect(neutral.expressions.ParamEyeLOpen).toBeCloseTo(1);
   });
 });
 

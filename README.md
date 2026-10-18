@@ -1,6 +1,6 @@
 # AniMirror
 
-本机运行的 VRM 面部动作工作室：导入角色，检查实际表情能力，映射与校准，再通过摄像头驱动头部和面部。
+本机运行的 VRM / Live2D 面部动作工作室：导入角色，检查实际表情能力，映射与校准，再通过摄像头驱动头部和面部。
 
 当前为 **V1 工程预览版**。核心功能已实现；真实人物动作成功率、成品动漫材质及 30 分钟持续运行等人工验收尚未完成。自动化测试结果见 [GitHub Actions](https://github.com/epiconfuison/AniMirror/actions)。
 
@@ -55,6 +55,17 @@ pnpm dev
 
 导入 `tests/fixtures/diagnostic-vrm1-rich.vrm`，再通过“导入 JSON”导入 `tests/fixtures/example-config.json`。展开“诊断与参数回放”，导入 `tests/fixtures/synthetic-face-sequence.json` 并点击回放，即可查看程序生成的示例动作。此方式用于体验角色驱动与回放，不验证摄像头识别效果。
 
+### 5.1 Live2D 模型（可选）
+
+在“角色模型”里切换到 **Live2D**，点击“选择 Live2D 模型文件夹”，选择包含 `.model3.json` 的整个模型文件夹。需要浏览器支持文件夹选择（Chrome / Edge）；模型的多张贴图与物理文件必须同在该文件夹内。支持 Cubism 5 SDK 能加载的 `.model3.json`（Version 3）+ `.moc3` 模型；`moc3` 版本需与内置 Core 兼容。
+
+- 只接受模型自带的相对路径资源；绝对路径、`..` 跳转、外部 URL 会直接拒绝，文件夹内出现 `.exe` 等非模型文件也会拒绝。
+- 模型身份由所有被引用文件的 SHA-256 共同计算（`live2d:` 前缀），因此同名但内容不同的模型不会共用配置；VRM 配置与 Live2D 配置互不通用。
+- 能力报告读取模型真实参数：`ParamAngleX/Y/Z`（头部三轴）、`ParamEyeLOpen/ROpen`（眼开合，映射时按“1 − 闭眼”反向驱动）、`ParamMouthOpenY`（嘴开合）、`ParamMouthForm`（微笑）、`ParamBrowLY/RY`（眉毛）。`ParamEyeBallX/Y`（视线）只作为待确认建议，需要手动试动确认。
+- 缺少某个参数只会禁用对应映射并显示原因，不会导致模型加载失败。
+- 刷新页面后需要重新选择模型文件夹；模型文件本身不会被保存。仓库不附带 Live2D 示例模型，请使用你拥有授权的模型，或 SDK 自带示例。
+- 与 SDK 相关的版本、许可与分发限制见 [Live2D 支持说明](docs/LIVE2D.md)。
+
 ### 常见启动问题
 
 | 问题 | 处理方法 |
@@ -70,7 +81,7 @@ pnpm dev
 
 ## 完整使用流程
 
-1. 选择或拖入一个自包含完整人形 `.vrm`（0.x / 1.0；≤100 MB）。可先试 `tests/fixtures/diagnostic-vrm1-rich.vrm`。外部贴图引用、损坏结构和过大网格会被拒绝；替换失败保留原角色。
+1. 选择模型类型（VRM 3D / Live2D），再导入对应资源：VRM 为单个自包含 `.vrm`（0.x / 1.0；≤100 MB），Live2D 为包含 `.model3.json` 的整个文件夹（≤120 MB）。可先试 `tests/fixtures/diagnostic-vrm1-rich.vrm`。外部贴图引用、损坏结构、过大网格和非法路径会被拒绝；替换失败保留原模型。
 2. 查看模型能力报告。在“映射与调节”中点击试动，确认近似映射；未确认的近似映射不会驱动。左右指角色自身的左右，镜像视频不改变数据语义。目标缺失时不会生成形变。
 3. 选择摄像头并主动开启。当前使用 **Worker CPU**，720p 请求、缩至宽 640 像素推理、最高 30 次/秒；只处理一张在途帧。实际吞吐取决于设备。
 4. 依次采集中性脸、闭眼、张嘴、微笑，每步 3 秒；眉毛可选。样本不足或动作不清晰会提示重试。每步校准独立自动保存，换模型可复用；重采中性脸会重置动作幅度。
@@ -108,14 +119,15 @@ GitHub Actions 在 Linux 环境执行单元测试、生产构建和生产浏览�
 ## 数据和限制
 
 - 摄像头图像在本机处理；模型、视频均不上传。IndexedDB 仅保存模型配置、默认个人校准和 UI 设置。“清除全部本地配置”会清除三类数据。
-- 模型表情覆盖规则交给 three-vrm；仅支持已有 VRM 表情接口，原始 morph 名称用于检查，不另设双重写入。
+- 模型表情覆盖规则交给 three-vrm；仅支持已有 VRM 表情接口，原始 morph 名称用于检查，不另设双重写入。Live2D 参数写入由 Cubism 适配器每帧一次完成，物理与姿态在写入之后求值。
+- Live2D 目前只驱动头部三轴、左右眼开合、嘴部开合，以及模型具备的微笑、眉毛、视线参数；不播放模型自带动作/表情文件，不做音频口型，不支持压缩包导入。视线与轴向正负号需逐模型人工试动确认。
 - 视线仅使用已映射的视线表情；仅有眼骨、没有视线表情时不提供眼球驱动。视觉口型不是语音/音素识别。
 - 目前以 Windows Chrome / Edge 为目标，自动化覆盖 Edge 与 CI Chromium；不同设备的真人效果仍需实际验证。无全身、手部、MMD、音频口型、虚拟摄像头、云端账号、AI 生成或付费 API。
 - 这三份原创 CC0 模型用于诊断；真实动漫模型需要自行拥有合法使用权限。见 [模型说明](docs/MODEL_FIXTURES.md)。
 
 ## 开发记录
 
-[项目计划](docs/PROJECT_PLAN.md) · [阶段目录](progress/README.md) · [第三方与 XR Animator 参考](docs/THIRD_PARTY.md)
+[项目计划](docs/PROJECT_PLAN.md) · [Live2D 支持说明](docs/LIVE2D.md) · [阶段目录](progress/README.md) · [第三方与 XR Animator 参考](docs/THIRD_PARTY.md)
 
 每完成阶段创建 `progress/序号-阶段名/`，记录已完成内容、可复现验证、Git 提交及未完成验收。后续路线继续按计划保留，不以空按钮代替实现。
 

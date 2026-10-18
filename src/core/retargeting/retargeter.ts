@@ -68,6 +68,8 @@ export class Retargeter {
     const tracking: DriveOutput['tracking'] = this.facePresent && age <= TRACKING_TIMING.staleMs ? 'live' : age <= TRACKING_TIMING.holdMs ? 'hold' : 'lost';
     // Retain old target keys with zero values so removing/redirecting a mapping clears its previous expression.
     const expressions: Record<string, number> = Object.fromEntries([...Object.keys(this.output.expressions), ...profile.mappings.map((rule) => rule.target)].map((name) => [name, 0]));
+    // A target marked signed (a Cubism parameter neutral at its mid-point) also accepts negative amounts.
+    const signedTargets = new Set(profile.mappings.filter((rule) => rule.signed).map((rule) => rule.target));
     let rotation = zero();
     if (tracking === 'live' && this.latest) {
       if (this.output.tracking !== 'live' && this.hasTracked) {
@@ -81,9 +83,13 @@ export class Retargeter {
       }
       for (const rule of profile.mappings) {
         if (!rule.enabled || (rule.approximate && !rule.confirmed) || (profile.eyeMode === 'off' && rule.input.startsWith('eyeLook'))) continue;
-        expressions[rule.target] = (expressions[rule.target] ?? 0) + (this.channels[rule.input] ?? 0) * clamp(rule.weight, -2, 2);
+        const channel = this.channels[rule.input] ?? 0;
+        const amount = rule.invert ? 1 - channel : channel;
+        expressions[rule.target] = (expressions[rule.target] ?? 0) + amount * clamp(rule.weight, -2, 2);
       }
-      for (const name of Object.keys(expressions)) expressions[name] = clamp(expressions[name]!);
+      for (const name of Object.keys(expressions)) {
+        expressions[name] = signedTargets.has(name) ? clamp(expressions[name]!, -1, 1) : clamp(expressions[name]!);
+      }
       for (const axis of axes) {
         const limit = clamp(profile.headLimits[axis], 0, Math.PI / 2);
         const difference = this.latest.rotation[axis] - (calibration?.neutralRotation[axis] ?? 0);

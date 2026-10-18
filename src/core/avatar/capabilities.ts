@@ -1,8 +1,8 @@
 import { Mesh } from 'three';
 import { VRMExpressionMorphTargetBind, type VRM } from '@pixiv/three-vrm';
-import type { AvatarCapabilities } from '../contracts';
+import type { VrmCapabilities } from '../contracts';
 
-export function inspectAvatar(vrm: VRM, version: '0' | '1', fallbackName: string): AvatarCapabilities {
+export function inspectAvatar(vrm: VRM, version: '0' | '1', fallbackName: string): VrmCapabilities {
   const manager = vrm.expressionManager;
   const presets = new Set(Object.keys(manager?.presetExpressionMap ?? {}));
   const expressions = (manager?.expressions ?? []).map(expression => ({
@@ -60,7 +60,7 @@ export function inspectAvatar(vrm: VRM, version: '0' | '1', fallbackName: string
   ];
   const meta = vrm.meta as unknown as { name?: string; title?: string } | undefined;
   return {
-    version, name: meta?.name || meta?.title || fallbackName,
+    format: 'vrm', version, name: meta?.name || meta?.title || fallbackName,
     bones, expressions, morphTargets, missing,
     level: blink && mouth ? (usable.length >= 8 && has('browInnerUp', 'browOuterUpLeft', 'browDownLeft') ? 'rich' : 'face') : 'basic',
     vertexCount,

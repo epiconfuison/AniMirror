@@ -31,6 +31,20 @@ async function visit(name, from) {
   for (const child of Object.keys(pkg.dependencies ?? {})) await visit(child, directory);
 }
 for (const name of Object.keys(project.dependencies)) await visit(name, root);
+// The Live2D Cubism SDK is vendored rather than installed as a package, and it is not
+// covered by the dependency walk above.
+const vendored = [
+  ['Live2D Cubism SDK for Web', ['src/vendor/cubism/LICENSE.md']],
+  ['Live2D Cubism Core (proprietary)', ['src/vendor/cubism/core/LICENSE.md', 'src/vendor/cubism/core/RedistributableFiles.txt']],
+  ['Live2D Cubism Web Framework', ['src/vendor/cubism/framework/LICENSE.md']],
+];
+for (const [title, files] of vendored) {
+  const content = [];
+  for (const file of files) {
+    try { content.push(await readFile(path.join(root, file), 'utf8')); } catch { /* SDK not vendored in this checkout */ }
+  }
+  if (content.length) notices.push(`${title}\n${content.join('\n\n')}`);
+}
 await mkdir(path.join(root, 'public'), { recursive: true });
 await writeFile(path.join(root, 'public/THIRD_PARTY_LICENSES.txt'), 'AR-Capture runtime dependency notices\n\n' + notices.join('\n\n' + '='.repeat(72) + '\n\n'));
 console.log(`Collected licenses for ${seen.size} runtime packages.`);

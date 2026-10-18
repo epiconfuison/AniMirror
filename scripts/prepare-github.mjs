@@ -32,7 +32,9 @@ const forbidden = relative => (relative !== '.env.example' && /(?:^|\/)(?:\.env(
   || (/\.vrm$/i.test(relative) && !originalModels.has(relative));
 const permitted = relative => !isLocalOnly(relative) && !forbidden(relative)
   && (topFiles.has(relative) || sourceDirectories.some(dir => relative.startsWith(`${dir}/`))
-    || relative === 'public/THIRD_PARTY_LICENSES.txt');
+    || relative === 'public/THIRD_PARTY_LICENSES.txt'
+    // Vendored Cubism Core/shaders are required at runtime and are redistributable files.
+    || relative.startsWith('public/vendor/'));
 const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
 
 // Walk only source roots, never dependency/cache directories or symbolic links.

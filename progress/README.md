@@ -9,5 +9,6 @@
 | [03-retargeting](03-retargeting/README.md) | 映射、双层校准、平滑恢复、严格配置保存 |
 | [04-studio](04-studio/README.md) | 工作室 UI、诊断回放、风格预设与简洁展示 |
 | [05-delivery](05-delivery/README.md) | 构建、操作说明、验收边界和 Git 索引 |
+| [06-live2d](06-live2d/README.md) | Live2D（Cubism SDK for Web 5-r.5）：模型适配契约、VRM 适配层、SDK 接入与静态预览、参数映射、模型身份与配置迁移 |
 
 原开发提交索引在阶段 05。真人面捕、成品动漫材质及长期性能仍待验证；目标与后续路线见 [项目计划](../docs/PROJECT_PLAN.md)。本机环境记录、人工测试指南和填写模板不随公开源码分发。

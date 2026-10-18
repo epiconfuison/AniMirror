@@ -6,7 +6,10 @@ import { loadAvatar } from '../../src/core/avatar/loadAvatar';
 import { validateVRMBuffer, hashAvatar, MAX_AVATAR_BYTES } from '../../src/core/avatar/validation';
 import { AvatarDriver } from '../../src/core/avatar/AvatarDriver';
 import { inspectAvatar } from '../../src/core/avatar/capabilities';
-import { AvatarStage } from '../../src/features/preview/AvatarStage';
+import { VrmAdapter, vrmModelLoader } from '../../src/core/avatar/VrmAdapter';
+import { LoadCancelledError, type ModelAdapter, type ModelLoader } from '../../src/core/adapters/adapter';
+import type { ModelCapabilities } from '../../src/core/contracts';
+import { PreviewStage } from '../../src/features/preview/PreviewStage';
 
 // Keep real GLTF/VRM loading while replacing only browser GPU and pointer plumbing.
 vi.mock('three', async importOriginal => {
@@ -83,23 +86,55 @@ describe('preview replacement lifecycle with a real model loader', () => {
     vi.stubGlobal('ResizeObserver', class { observe() {} disconnect() {} });
     vi.stubGlobal('requestAnimationFrame', () => 1);
     vi.stubGlobal('cancelAnimationFrame', () => {});
-    const stage = new AvatarStage({ clientWidth: 800, clientHeight: 600, appendChild() {} } as unknown as HTMLElement);
+    const container = { clientWidth: 800, clientHeight: 600, style: {}, appendChild() {} } as unknown as HTMLElement;
+    const stage = new PreviewStage(container);
     try {
-      await stage.load(new File([await fixture()], 'first.vrm'));
-      const internals = stage as unknown as { loaded: Awaited<ReturnType<typeof loadAvatar>> };
-      const old = internals.loaded;
+      await stage.load(vrmModelLoader(new File([await fixture()], 'first.vrm')));
+      const first = stage.current;
+      expect(first).toBeInstanceOf(VrmAdapter);
       let oldGeometry: Mesh['geometry'] | undefined;
-      old.vrm.scene.traverse(node => { if (node instanceof Mesh) oldGeometry = node.geometry; });
+      (first as VrmAdapter).vrm.scene.traverse(node => { if (node instanceof Mesh) oldGeometry = node.geometry; });
       const disposed = vi.spyOn(oldGeometry!, 'dispose');
-      await expect(stage.load(new File(['broken'], 'broken.vrm'))).rejects.toThrow();
-      expect(internals.loaded).toBe(old);
+      await expect(stage.load(vrmModelLoader(new File(['broken'], 'broken.vrm')))).rejects.toThrow();
+      expect(stage.current).toBe(first);
       expect(disposed).not.toHaveBeenCalled();
-      await stage.load(new File([await fixture('diagnostic-vrm1-minimal.vrm')], 'second.vrm'));
-      expect(internals.loaded).not.toBe(old);
+      await stage.load(vrmModelLoader(new File([await fixture('diagnostic-vrm1-minimal.vrm')], 'second.vrm')));
+      expect(stage.current).not.toBe(first);
       expect(disposed).toHaveBeenCalledOnce();
       stage.dispose();
-      expect(internals.loaded).toBeUndefined();
+      expect(stage.current).toBeUndefined();
       expect(() => stage.dispose()).not.toThrow();
+    } finally { stage.dispose(); vi.unstubAllGlobals(); }
+  });
+
+  it('disposes a candidate that arrives after a newer selection and keeps the newest model', async () => {
+    vi.stubGlobal('window', { devicePixelRatio: 1 });
+    vi.stubGlobal('ResizeObserver', class { observe() {} disconnect() {} });
+    vi.stubGlobal('requestAnimationFrame', () => 1);
+    vi.stubGlobal('cancelAnimationFrame', () => {});
+    const container = { clientWidth: 800, clientHeight: 600, style: {}, appendChild() {} } as unknown as HTMLElement;
+    const stage = new PreviewStage(container);
+    let release!: () => void;
+    const gate = new Promise<void>(resolve => { release = resolve; });
+    const disposed = vi.fn();
+    const capabilities: ModelCapabilities = { format: 'vrm', version: '1', name: 'late', bones: { head: true, leftEye: false, rightEye: false },
+      expressions: [], morphTargets: [], missing: [], level: 'basic', vertexCount: 1 };
+    const lateAdapter = (): ModelAdapter => ({
+      format: 'vrm', capabilities, canvas: {} as HTMLCanvasElement,
+      apply() {}, update() {}, render() {}, resize() {}, setFraming() {}, setBackground() {}, resetView() {}, dispose: disposed,
+    });
+    const late: ModelLoader = async () => {
+      await gate;
+      return { asset: { assetId: 'vrm:late', name: 'late', format: 'vrm', source: 'local', sizeBytes: 1, entry: 'late.vrm' }, capabilities, adapter: lateAdapter() };
+    };
+    try {
+      const stale = stage.load(late);
+      await stage.load(vrmModelLoader(new File([await fixture('diagnostic-vrm1-minimal.vrm')], 'newest.vrm')));
+      const newest = stage.current;
+      release();
+      await expect(stale).rejects.toBeInstanceOf(LoadCancelledError);
+      expect(disposed).toHaveBeenCalledOnce();
+      expect(stage.current).toBe(newest);
     } finally { stage.dispose(); vi.unstubAllGlobals(); }
   });
 });

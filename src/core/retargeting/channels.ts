@@ -1,5 +1,6 @@
 import { DEFAULT_TUNING } from '../contracts';
-import type { AvatarCapabilities, MappingRule, ModelProfile } from '../contracts';
+import type { MappingRule, ModelCapabilities, ModelProfile, VrmCapabilities } from '../contracts';
+import { suggestLive2DMappings } from '../live2d/parameters';
 
 /** MediaPipe category names, never positional ARKit indices. */
 export const INPUT_CHANNELS = [
@@ -53,7 +54,7 @@ const approximations: Record<string, { aliases: string[]; weight: number }> = {
 };
 
 /** Uncertain whole-face presets are suggestions requiring explicit confirmation. */
-export function suggestMappings(capabilities: AvatarCapabilities): MappingRule[] {
+export function suggestVrmMappings(capabilities: VrmCapabilities): MappingRule[] {
   const available = capabilities.expressions.filter((expression) => expression.bindCount > 0);
   return INPUT_CHANNELS.flatMap(({ name: input }) => {
     const exact = available.find((expression) => normalized(expression.name) === normalized(input));
@@ -69,9 +70,18 @@ export function suggestMappings(capabilities: AvatarCapabilities): MappingRule[]
   });
 }
 
-export function createDefaultProfile(modelHash: string, modelName: string, capabilities: AvatarCapabilities): ModelProfile {
+/**
+ * Target suggestions are format aware: VRM uses expression names, Live2D uses the
+ * Cubism parameter ids the loaded model really exposes. Nothing here knows how a
+ * target is rendered.
+ */
+export function suggestMappings(capabilities: ModelCapabilities): MappingRule[] {
+  return capabilities.format === 'vrm' ? suggestVrmMappings(capabilities) : suggestLive2DMappings(capabilities);
+}
+
+export function createDefaultProfile(modelHash: string, modelName: string, capabilities: ModelCapabilities): ModelProfile {
   return {
-    schemaVersion: 1, modelHash, modelName, mappings: suggestMappings(capabilities),
+    schemaVersion: 2, modelHash, modelName, format: capabilities.format, mappings: suggestMappings(capabilities),
     tuning: Object.fromEntries(INPUT_CHANNELS.map(({ name }) => [name, { ...DEFAULT_TUNING }])),
     headLimits: { x: Math.PI / 4, y: Math.PI / 3, z: Math.PI / 5 },
     headGain: 1, smoothing: 0.5, style: 'natural', eyeMode: 'expression',
