@@ -20,6 +20,8 @@
 | @mediapipe/tasks-vision | 0.10.32 | 包元数据声明 Apache-2.0；JS/WASM 从已安装包复制 |
 | Face Landmarker | Google 模型 float16/1 | [官方模型文档](https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker/index#models)；固定官方分发 URL 和内容哈希，不训练或修改模型 |
 | 三份 diagnostic VRM | 本仓库程序生成 | 原创 CC0-1.0，见 tests/fixtures/LICENSE.md |
+| Live2D Cubism SDK for Web | 5-r.5（官方包，vendored 到 `src/vendor/cubism`、`public/vendor`） | Core：Live2D Proprietary Software License Agreement，仅 `Core/RedistributableFiles.txt` 列出的文件可再分发；Framework：Live2D Open Software License Agreement。来源、上游提交与逐文件哈希见 [Live2D 支持说明](LIVE2D.md) 与 `scripts/live2d-sdk.lock.json` |
+| Live2D 示例模型（Hiyori 等） | SDK 自带，**不随本仓库分发** | 由 Live2D 授权，仅在本地具备 SDK 时用于浏览器验收 |
 | Vite、TypeScript、Vitest、Playwright 等 | package.json / pnpm-lock.yaml | 开发验证工具；各 npm 包含许可，不把它们当作本项目原创 |
 
 `scripts/setup-assets.mjs` 下载地址：`https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task`。版本及 SHA-256 在 `scripts/tracking-assets.lock.json`，每份本地资源的哈希和大小在生成的 `public/tracking-assets/manifest.json`。
@@ -31,5 +33,6 @@
 - [MediaPipe Web 官方集成](https://developers.google.com/edge/mediapipe/solutions/vision/face_landmarker/web_js)：VIDEO、FaceLandmarker 输出与同步检测，放入 Worker。
 - [three-vrm](https://github.com/pixiv/three-vrm)：VRMLoaderPlugin、rotateVRM0、normalized humanoid 和 ExpressionManager。
 - [VRM 表情规范](https://vrm.dev/en/vrm1/expression/)：预设语义与 blink/mouth/lookAt 覆盖规则。
+- [Cubism SDK for Web 官方手册](https://docs.live2d.com/zh-CHS/cubism-sdk-manual/cubism-sdk-for-web/)：CubismMoc / CubismModel / CubismRenderer_WebGL 的最小集成路径，物理与姿态求值顺序。
 
 本版没有进行与 XR Animator 相同设备、同模型、同设置的帧率对比实验，不使用上游宣传数值作为本项目性能证据。

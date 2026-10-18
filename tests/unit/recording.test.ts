@@ -5,7 +5,7 @@ import { appendRecordingFrame, evaluateRecording, parseRecording, type Parameter
 
 const frame = (timestamp: number, value = 0.7, faceDetected = true): TrackingFrame => ({ schemaVersion: 1, timestamp, faceDetected,
   rotation: { x: 0.1, y: -0.2, z: 0 }, channels: { jawOpen: value }, inferenceMs: 12 });
-const capabilities: AvatarCapabilities = { version: '1', name: 'fixture', bones: { head: true, leftEye: false, rightEye: false },
+const capabilities: AvatarCapabilities = { format: 'vrm', version: '1', name: 'fixture', bones: { head: true, leftEye: false, rightEye: false },
   expressions: [{ name: 'aa', preset: true, bindCount: 1, isBinary: false, overrideBlink: 'none', overrideMouth: 'none', overrideLookAt: 'none' }],
   morphTargets: ['aa'], missing: [], level: 'face', vertexCount: 10 };
 const recorded = (): ParameterRecording => ({ schemaVersion: 1, durationMs: 1200, frames: [frame(10), frame(40), frame(100, 0, false), frame(1100, 0.9)] });

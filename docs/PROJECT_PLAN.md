@@ -94,6 +94,8 @@ P0 为首版必须完成；P1 为首版优化项，不能阻塞 P0 闭环。
 
 以下功能保留到后续版本：通用 GLB/FBX/MMD/Live2D 导入、自动补面部形变、全身/手部/多人追踪、真实画面头部替换、复杂动漫特效、音频口型、视频导出、虚拟摄像头、VMC/OSC 集成、桌面安装包、云模型库，以及通过 API 调用大模型生成 VRM。
 
+> 2026-10-18 更新：Live2D（Cubism SDK for Web 5-r.5）已作为独立适配器实现，不再是延后项。支持范围、模型包规则、参数映射与已知限制见 [Live2D 支持说明](LIVE2D.md)；实施与验收记录见 [progress/06-live2d](../progress/06-live2d/README.md)。MMD、通用 GLB/FBX 与音频口型仍在延后项中。
+
 首版不增加不可用的“AI 生成”按钮，也不建立空的付费 API 后端。
 
 ## 4. 用户流程与界面
@@ -153,10 +155,10 @@ flowchart LR
 | 数据结构 | 关键内容 | 用途 |
 |---|---|---|
 | TrackingFrame | schemaVersion、时间戳、有效人脸状态、头部旋转、具名表情系数、可选关键点 | 解耦追踪器与模型；供回放使用 |
-| AvatarCapabilities | VRM 版本、可用骨骼、预设/自定义表情、形变目标、缺失项 | 生成能力报告及映射建议 |
+| ModelCapabilities | 格式判别（vrm / live2d）、VRM 版本与骨骼表情或 Live2D 参数、缺失项 | 生成能力报告及映射建议 |
 | ModelProfile | modelHash、schemaVersion、输入目标映射、曲线、限制、眼神模式 | 保存每个模型的配置 |
 | UserCalibration | profileId、schemaVersion、中性值、动作范围、采样质量、时间 | 与模型分离，支持重新校准 |
-| AvatarAsset | assetId、文件引用、format、source、名称、可选来源与许可信息 | 当前 source 为 local；将来可接 generated |
+| ModelAsset | assetId（`<format>:<哈希>`）、格式、source、名称、入口与大小 | 当前 source 为 local；将来可接 generated |
 
 不将 blendshape 分数当成追踪置信度。追踪质量应来自实际可获得的有效检测状态、关键点完整性、姿态合理性和数据时效性；缺少逐帧置信度时明确表示未知。
 
@@ -337,7 +339,7 @@ flowchart LR
 
 | 边界 | V1 的实际工作 | 生成版本再做 |
 |---|---|---|
-| 模型来源 | AvatarAsset 使用 source 字段，当前仅 local | generated 来源、云端下载与历史任务 |
+| 模型来源 | ModelAsset 使用 source 字段，当前仅 local | generated 来源、云端下载与历史任务 |
 | 统一接入 | 所有资产经同一加载器、能力检查和配置入口 | 生成产物也走同一路径 |
 | 配置演进 | 数据含 schemaVersion，可做迁移 | 保存生成参数、模型版本与来源追溯 |
 | 能力报告 | 区分结构错误、缺失通道、可驱动范围 | 将其复用为自动生成验收的一部分 |

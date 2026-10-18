@@ -1,11 +1,11 @@
 import { LoadingManager } from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { VRMLoaderPlugin, VRMUtils, type VRM } from '@pixiv/three-vrm';
-import type { AvatarAsset, AvatarCapabilities } from '../contracts';
+import type { ModelAsset, VrmCapabilities } from '../contracts';
 import { inspectAvatar } from './capabilities';
 import { hashAvatar, MAX_AVATAR_BYTES, validateVRMBuffer } from './validation';
 
-export interface LoadedAvatar { vrm: VRM; asset: AvatarAsset; capabilities: AvatarCapabilities }
+export interface LoadedAvatar { vrm: VRM; asset: ModelAsset; capabilities: VrmCapabilities }
 
 export async function loadAvatar(file: File, onProgress: (percent: number) => void = () => {}): Promise<LoadedAvatar> {
   if (file.size > MAX_AVATAR_BYTES) throw new Error('模型超过 100 MB 上限，请先减少贴图或网格规模。');
@@ -32,7 +32,9 @@ export async function loadAvatar(file: File, onProgress: (percent: number) => vo
     vrm.scene.traverse(node => { node.frustumCulled = false; });
     const capabilities = inspectAvatar(vrm, validated.version, file.name.replace(/\.vrm$/i, ''));
     onProgress(100);
-    return { vrm, asset: { assetId, file, format: 'vrm', source: 'local', name: capabilities.name }, capabilities };
+    // The format prefix keeps VRM and Live2D identities from ever sharing a stored profile.
+    return { vrm, asset: { assetId: `vrm:${assetId}`, name: capabilities.name, format: 'vrm', source: 'local',
+      sizeBytes: file.size, entry: file.name }, capabilities };
   } catch (error) {
     if (vrm) VRMUtils.deepDispose(vrm.scene);
     const detail = error instanceof Error ? error.message : '未知加载错误';

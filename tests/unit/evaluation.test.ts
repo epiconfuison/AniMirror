@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { jitterRms, reductionPercent, compareRecording } from '../../src/features/diagnostics/evaluation';
 import type { AvatarCapabilities, TrackingFrame } from '../../src/core/contracts';
 import { createDefaultProfile } from '../../src/core/retargeting';
-const capabilities: AvatarCapabilities = { version: '1', name: 'test', bones: { head: true, leftEye: false, rightEye: false },
+const capabilities: AvatarCapabilities = { format: 'vrm', version: '1', name: 'test', bones: { head: true, leftEye: false, rightEye: false },
   expressions: [{ name: 'aa', preset: true, bindCount: 1, isBinary: false, overrideBlink: 'none', overrideMouth: 'none', overrideLookAt: 'none' }], morphTargets: ['aa'], missing: [], level: 'face', vertexCount: 10 };
 const source = () => ({ schemaVersion: 1 as const, durationMs: 8000, frames: Array.from({ length: 241 }, (_, i): TrackingFrame => ({ schemaVersion: 1, timestamp: i * 1000 / 30, faceDetected: true, inferenceMs: 1, channels: { jawOpen: .3 + (i % 2 ? .01 : -.01) }, rotation: { x: .1 + (i % 2 ? .02 : -.02), y: 0, z: 0 } })) });
 describe('final-test offline metrics', () => {

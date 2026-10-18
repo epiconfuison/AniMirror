@@ -3,9 +3,9 @@ import { describe, expect, it } from 'vitest';
 import { DEFAULT_UI } from '../../src/core/contracts';
 import type { AvatarCapabilities, UserCalibration } from '../../src/core/contracts';
 import { createDefaultProfile } from '../../src/core/retargeting';
-import { parseBundle, ProfileRepository, serializeBundle, validateModelProfile } from '../../src/core/profiles';
+import { parseBundle, ProfileRepository, serializeBundle, validateBundle, validateModelProfile } from '../../src/core/profiles';
 
-const capabilities: AvatarCapabilities = { version: '1', name: 'fixture', bones: { head: true, leftEye: false, rightEye: false },
+const capabilities: AvatarCapabilities = { format: 'vrm', version: '1', name: 'fixture', bones: { head: true, leftEye: false, rightEye: false },
   expressions: [{ name: 'aa', preset: true, bindCount: 1, isBinary: false, overrideBlink: 'none', overrideMouth: 'none', overrideLookAt: 'none' }],
   morphTargets: ['aa'], missing: [], level: 'face', vertexCount: 10 };
 const profile = () => createDefaultProfile('model-hash', 'fixture.vrm', capabilities);
@@ -14,18 +14,28 @@ const calibration: UserCalibration = { schemaVersion: 1, profileId: 'default', c
 
 describe('strict config import', () => {
   it('round-trips separate model, personal and UI sections', () => {
-    const bundle = { schemaVersion: 1 as const, model: profile(), calibration, ui: DEFAULT_UI };
+    const bundle = { schemaVersion: 2 as const, model: profile(), calibration, ui: DEFAULT_UI };
     expect(parseBundle(serializeBundle(bundle), 'model-hash', capabilities)).toEqual(bundle);
-    expect(parseBundle(serializeBundle({ schemaVersion: 1, calibration }), 'another-model', capabilities).calibration).toEqual(calibration);
+    expect(parseBundle(serializeBundle({ schemaVersion: 2, calibration }), 'another-model', capabilities).calibration).toEqual(calibration);
   });
   it('rejects damaged JSON, unknown versions, mismatched models, and unknown channels or targets', () => {
     expect(() => parseBundle('{')).toThrow('JSON');
-    expect(() => parseBundle('{"schemaVersion":2,"ui":{}}')).toThrow('schemaVersion');
+    expect(() => parseBundle('{"schemaVersion":3,"ui":{}}')).toThrow('schemaVersion');
     const config = profile();
-    expect(() => parseBundle(JSON.stringify({ schemaVersion: 1, model: config }), 'other', capabilities)).toThrow('哈希');
+    expect(() => parseBundle(JSON.stringify({ schemaVersion: 2, model: config }), 'other', capabilities)).toThrow('哈希');
     config.mappings[0]!.input = 'notAChannel'; expect(() => validateModelProfile(config)).toThrow('未知输入');
     config.mappings[0]!.input = 'jawOpen'; config.mappings[0]!.target = 'notInModel';
     expect(() => validateModelProfile(config, 'model-hash', capabilities)).toThrow('没有可驱动目标');
+  });
+  it('migrates a version 1 VRM profile and a format-less bundle to version 2', () => {
+    const modern = profile();
+    const legacy = { ...modern, schemaVersion: 1 as const, format: undefined as never };
+    const parsed = validateModelProfile(legacy, 'model-hash', capabilities);
+    expect(parsed.schemaVersion).toBe(2);
+    expect(parsed.format).toBe('vrm');
+    const bundle = validateBundle({ schemaVersion: 1, model: legacy, calibration, ui: DEFAULT_UI }, 'model-hash', capabilities);
+    expect(bundle.schemaVersion).toBe(2);
+    expect(bundle.model!.format).toBe('vrm');
   });
   it('clamps finite unsafe ranges, but rejects nonfinite values and inverted bounds', () => {
     const config = profile(); config.headGain = 100; config.headLimits.y = 20; config.smoothing = -3; config.tuning.jawOpen!.gain = 10;
@@ -60,11 +70,14 @@ describe('independent IndexedDB persistence', () => {
   });
   it('validates before save and validates stored data again when reading', async () => {
     const repository = new ProfileRepository(`ar-capture-invalid-${crypto.randomUUID()}`);
-    const invalid = profile(); invalid.schemaVersion = 99 as 1;
+    const invalid = profile(); (invalid as { schemaVersion: number }).schemaVersion = 99;
     await expect(repository.saveModel(invalid)).rejects.toThrow('schemaVersion');
     expect(await repository.getModel(invalid.modelHash)).toBeUndefined();
     await repository.saveModel(profile());
-    await expect(repository.getModel('model-hash', { ...capabilities, expressions: [] })).rejects.toThrow('没有可驱动目标');
+    // Mappings the current model cannot drive are dropped and reported instead of failing the restore.
+    const restored = await repository.restoreModel('model-hash', { ...capabilities, expressions: [] });
+    expect(restored?.profile.mappings).toEqual([]);
+    expect(restored?.droppedMappings).toBe(1);
     await repository.clear(); await repository.close();
   });
   it('deletes personal calibration independently without reviving it after reopen', async () => {
